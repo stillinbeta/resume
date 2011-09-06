@@ -1,5 +1,45 @@
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,11pt,notitlepage]{article}
 \usepackage[margin=2cm]{geometry}
+\usepackage[pdfborder={0 0 0},urlcolor=blue]{hyperref}
+\usepackage{mdwlist}
+\setcounter{secnumdepth}{0}
+\renewcommand{\labelitemi}{\tiny \textgreater}
+\newenvironment{employment}
+               {\begin{itemize*}%
+                \setlength{\itemsep}{0cm}%
+                \setlength{\parskip}{0cm}%
+                \setlength{\itemindent}{-1cm}
+               }
+               {\end{itemize*}}
+
+\urlstyle{same}
+\setlength{\topskip}{0cm}%
+\setlength{\topmargin}{0cm}
+
 \begin{document}
-Resume goes here
+\input{./title.tex}
+
+\section{Employment} 
+\subsection{Bering Media}
+\begin{employment}
+\item Summer Co-op student developer
+\item Web development with PHP and clustering with Riak, RabbitMQ and
+Zookeeper
+\item Close collaboration with small, new team on large  projects
+\item \url{http://beringmedia.com}
+\end{employment}
+
+\subsection{Northland College}
+\subsection{University of Wisconsin-Madison}
+\subsection{Gogzmer Media}
+
+\section{Projects}
+\subsection{Academics Portal}
+\subsection{UW MCSC}
+\subsection{Javascript Tetris}
+\subsection{HCI Reservation System}
+
+\section{Technologies}
+
+
 \end{document}
