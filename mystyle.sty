@@ -1,5 +1,5 @@
 \usepackage[pdfborder={0 0 0},urlcolor=blue]{hyperref}
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{mdwlist}
 \setcounter{secnumdepth}{0}
 \renewcommand{\labelitemi}{\tiny \textgreater}
@@ -11,6 +11,7 @@
                }
                {\end{itemize*}}
 \urlstyle{same}
-\setlength{\topskip}{0cm}%
-\setlength{\topmargin}{0cm}
+
+\renewcommand{\section}[1]{{\Large#1\\}}
+\renewcommand{\subsection}[1]{{\large\bf#1}}
 
