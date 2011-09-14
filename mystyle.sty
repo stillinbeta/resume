@@ -3,15 +3,24 @@
 \usepackage{mdwlist}
 \setcounter{secnumdepth}{0}
 \renewcommand{\labelitemi}{\tiny \textgreater}
+%\newenvironment{employment}
+%               {\begin{itemize*}
+%                \setlength{\itemindent}{2cm}
+%               }
+%               {\end{itemize*}}
 \newenvironment{employment}
-               {\begin{itemize*}%
-                \setlength{\itemsep}{0cm}%
-                \setlength{\parskip}{0cm}%
-                \setlength{\itemindent}{-1cm}
+               {\begin{list}
+               {\tiny \textgreater}
+                   {\leftmargin=0mm
+                   \topsep=0mm
+                   \itemsep=0mm
+                   \parsep=0mm
+                   }
                }
-               {\end{itemize*}}
+               {\end{list}\vspace{6pt}}
 \urlstyle{same}
 
-\renewcommand{\section}[1]{{\Large#1\\}}
-\renewcommand{\subsection}[1]{{\large\bf#1}}
+\renewcommand{\section}[1]{{\Large\scshape#1
+                            \vspace{6pt} \\}}
+\renewcommand{\subsection}[2]{{\bf\large#1}\hfill#2}
 
