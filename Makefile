@@ -4,4 +4,4 @@ resume.pdf: resume.tex title.tex mystyle.sty
 	pdflatex $< 
 
 clean:
-	rm resume.pdf
+	rm resume.pdf *.aux *.log *.out
