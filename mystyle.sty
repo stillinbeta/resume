@@ -2,29 +2,22 @@
 \usepackage[margin=1.5cm]{geometry}
 \usepackage{mdwlist}
 
+\thispagestyle{empty}
+\urlstyle{same}
 
-%\newenvironment{employment}
-%               {\begin{itemize*}
-%                \setlength{\itemindent}{2cm}
-%               }
-%               {\end{itemize*}}
 \newenvironment{employment}
                {\begin{list}
-               {\tiny \textgreater}
+               {{\tiny \textgreater}}
                    {\leftmargin=0mm
                    \topsep=0mm
                    \itemsep=0mm
                    \parsep=0mm
                    }
                }
-               {\end{list}\vspace{6pt}}
-\urlstyle{same}
+               {\end{list}}
 
-\newcommand{\head}[1]{{\Large\scshape#1
-                            \vspace{6pt} \\}}
-\newcommand{\subhead}[1]{{\bf\large#1}}
+\newcommand{\head}[1]{{\Large\scshape#1\\}}
+\newcommand{\subhead}[1]{\vspace{6pt}{\bf\large#1}}
 \newcommand{\company}[2]{\subhead{#1}\hfill#2\\}
-
 \newcommand{\postitle}[1]{{\small\bfseries #1}}
-
-
+\newcommand{\vbar}{\rule[1mm]{\linewidth}{0.25mm}\\}
