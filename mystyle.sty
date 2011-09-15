@@ -1,8 +1,8 @@
 \usepackage[pdfborder={0 0 0},urlcolor=blue]{hyperref}
 \usepackage[margin=1.5cm]{geometry}
 \usepackage{mdwlist}
-\setcounter{secnumdepth}{0}
-\renewcommand{\labelitemi}{\tiny \textgreater}
+
+
 %\newenvironment{employment}
 %               {\begin{itemize*}
 %                \setlength{\itemindent}{2cm}
@@ -20,7 +20,11 @@
                {\end{list}\vspace{6pt}}
 \urlstyle{same}
 
-\renewcommand{\section}[1]{{\Large\scshape#1
+\newcommand{\head}[1]{{\Large\scshape#1
                             \vspace{6pt} \\}}
-\renewcommand{\subsection}[2]{{\bf\large#1}\hfill#2}
+\newcommand{\subhead}[1]{{\bf\large#1}}
+\newcommand{\company}[2]{\subhead{#1}\hfill#2\\}
+
+\newcommand{\postitle}[1]{{\small\bfseries #1}}
+
 
