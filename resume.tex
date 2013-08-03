@@ -4,107 +4,136 @@
 \begin{document}
 \input{./title.tex}
 \vbar
-\head{Education}
-    \company{University of Toronto}{2010-Present}
-    \postitle{Fourth year student}
-    \begin{employment}
-        \item Computer Science specialist
-        \item Writing and Rhetoric minor
-    \end{employment}
-    \company{University of Melbourne}{2012}
-    \postitle{Exchange student}\\
-    \company{Northland College}{2009-2010}
-    \postitle{Dual high school enrollment}
-
-\vbar
 \head{Experience}
+    \company{Heroku (subsidiary of Salesforce.com)}{2014-present}
+        \companydescurl{A leading Platform-as-a-Service provider}{heroku.com} \\
+        \postitle{Associate Member of Technical Staff, 2014 - 2015} \\
+        \postitle{Member of Technical Staff, 2015 - 2016} \\
+        \postitle{Senior Member of Technical Staff, 2016 - Present} \\
+        \begin{employment}
+            \item Quickly familiarised myself with and became productive in
+              dozens of diverse codebases in multiple new-to-me languages (Ruby,
+              Coffescript, Go, Erlang)
+            \item Coordinated development with multiple teams to push
+              cross-cutting projects forward
+            \item Lead development on tooling to aid standards compliance,
+                  allowing for new business opportunities
+            \item Participated in 24/7 oncall rotation for high-impact services with
+                  very low response times
+            \item Coordinated responses to complex outages across multiple people
+              and teams
+            \item Predicted problems with architectural decisions before they
+              became real world outages
+            \item Helped launch several major features, including Heroku
+              SSL, Automated Certificate Management, and dyno quotas
+            \item Interacted directly with customers via internal support
+              tickets
+        \end{employment}
     \company{Demonware}{2012-2013}
-        \companydesc{Activision studio providing online infrastructure for multiplayer video games} \\
+    \companydescurl
+       {Activision studio providing online infrastructure for multiplayer video
+         games}
+       {demonware.net} \\
         \postitle{Software Engineer, Systems Engineering (Co-op)}
         \begin{employment}
-            \item Helped design, author, deploy and support internal IaaS
-                  project that drastically reduced DC buildout effort
+            \item Helped design, author, deploy, and support internal IaaS
+                  project that drastically reduced datacentre buildout effort
             \item Maintained and updated metrics capability and infrastructure
             \item Wrote Puppet modules to deploy applications to thousands of servers
+            \item Credited in several AAA video games, including
+              {\it Diablo III} and multiple {\it Call of Duty} installments
         \end{employment}
     \company{Bering Media}{2011}
-        \companydesc{A small Toronto startup delivering geotargeted online marketing} \\
-        \postitle{Developer (Co-op)}
+    \companydescurl
+    {A small Toronto startup delivering geotargeted online marketing}
+    {beringmedia.com} \\
+    \postitle{Developer (Co-op)}
         \begin{employment}
             \item Developed internal web applications using PHP and Zend
             Framework
             \item Combined independently developed clustered components,
             utilizing Riak, Zookeeper and RabbitMQ
-            \item Worked closely with small, Agile team on large, long-term
-            clustering project
-            \item \url{http://beringmedia.com}
         \end{employment}
-    \company{Ladies Learning Code}{2012-Present}
-        \companydesc{Ladies Learning code provides full-day tutorials
-                     on various technologies to inexperienced women} \\
-        \postitle{Volunteer Mentor (eight workshops)}
-        \begin{employment}
-            \item Articulated complex concepts to novice programmers of variable skill level
-        \end{employment}
-    \company{Northland College}{2009-2010}
-        \postitle{Web Development Assistant}
-        \begin{employment}
-            \item Maintained and updated college's ModX-based site
-            \item Created and deployed WordpressMU-based portal for academic
-            departments
-            \item \url{http://www.northland.edu}
-        \end{employment}
-    \company{University of Wisconsin-Madison}{2010}
-        \postitle{Contractor to Human-Computer Interaction Lab}
-        \begin{employment}
-            \item Wrote appointment booking system in Django/Python
-            \item Used online and in-person communications to meet client needs
-            and expectations
-            \item \url{http://hci.cs.wisc.edu}
-        \end{employment}
-    \company{Gogzmer Media}{2008-2010}
-        \postitle{Freelance Web Developer}
-        \begin{employment}
-            \item PHP Development in Wordpress and Drupal
-            \item Communicated effectively with clients in person and remotely
-            \item \url{http://www.gogzmermedia.com/}
-        \end{employment}
+\vbar{}
+\head{Education}
+    \company{University of Toronto}{2010 -- 2014}
+    \postitle{Honours Bachelor of Science}
+    \begin{employment}
+        \item Computer Science Specialist
+        \item Writing and Rhetoric Minor
+    \end{employment}
+\newpage
+%\vbar
+\head{Technologies}
+   \companydesc{I pride myself on learning new technologies fast, and making
+     tactical changes in unfamiliar code-bases. These are some examples of
+     technologies I've worked with in the past}
+\begin{description}[topsep=0mm,noitemsep]
+  \item[Python] The primary language of development at Demonware. Still my go-to
+    for small scripts.
+  \item[Ruby] Extensively used at Heroku, mostly Sinatra but some Rails.
+  \item[Linux] Long-term user of desktop Arch Linux, have run CentOS,
+    Gentoo and Ubuntu servers.
+  \item[PostgresQL] The Database of choice at Heroku. Comfortable with raw SQL.
+  %\item[Java] Coursework, some Android development (on GitHub)
+  \item[Javascript] At Heroku I used both both server-side (Hubot)
+    and client-side (internal tools).
+  \item[Shell Scripting] Numerous shell scripts written, some under duress during incidents
+  %\item[Puppet] Wrote modules for deploying and configuring in-house packages at Demonware
+  \item[Haskell] Coursework and personal projects. Nothing professional yet, but I
+    can dream.
+  \item[Erlang] The Heroku Router is written in Erlang, as are various supporting services.
+  %\item[Elixir] Several critical Heroku microservices are written in Elixir.
+  \item[Go] Heroku extensively uses Go microservices with Kafka, gRPC, and Postgres.
+\end{description}
 \vbar
 \head{Projects}
+    \company{PleaseCaption}{2016}
+    \companydesc{A bot to remind you to add alt text to your images}
+    \begin{employment}
+      \item Written in Haskell using Conduit
+      \item \url{https://twitter.com/pleasecaption}
+      \item \url{https://github.com/stillinbeta/pleasecaption}
+    \end{employment}
     \company{Github}{}
         \begin{employment}
-           \item \url{http://github.com/stillinbeta}
+           \item \url{https://github.com/stillinbeta}
         \end{employment}
-    \company{Portfolio}{}
-        \begin{employment}
-            \item \url{http://stillinbeta.com/portfolio/}
-        \end{employment}
-    \company{Rockt}{2011}
-        \postitle{Geopresence game based on Toronto streetcar network}
-        \begin{employment}
-            \item Backend written in Django using MongoDB
-            \item HTML5 mobile application using JQuery Mobile
-            \item \url{http://rockt.ca}
-            \item \url{http://github.com/stillinbeta/rockt}
-        \end{employment}
+\vbar
+
+\head{Talks}
+      \company{Pager Equity}{}
+      \companydesc{A talk on how a pager rotation could unintentionally be marginalising part of your team}
+      \begin{employment}
+          \item Given at Devops Days Boston 2016
+          \item Recording: \url{http://bit.ly/liz-preso1}
+          \item Slides: \url{http://bit.ly/liz-slides1}
+      \end{employment}
+      \company{Master of None}{}
+      \companydesc{How I deal with being a generalist: learning new things fast,
+      and making sure I can remember after I forget.}
+      \begin{employment}
+          \item Given at NYC SRE Tech Talks
+          \item Slides: \url{http://bit.ly/liz-slides2}
+      \end{employment}
+\vbar
+\head{Writing}
+     \company{How Tech Employees Can Use Corporate Donation Matching}{2016}
+     \companydesc{A how-to guide for leveraging corporate resources for
+       activism}
+     \begin{employment}
+       \item Paid piece for Model View Culture
+       \item \url{http://bit.ly/liz-article1}
+       \end{employment}
 
 \vbar
-\head{Technologies}
+\head{Work Style}
 \begin{description}[topsep=0mm,noitemsep]
-\item[Python] Extensive personal, educational and professional experience
-\item[C] Coursework, some personal experience. Python C API.
-\item[Ruby] Some personal and professional projects, including Sinatra framework
-\item[Linux] Experienced user of Arch, CentOS, Gentoo, and Ubuntu
-\item[MySQL] Several large personal and professional projects
-\item[Java] Coursework, some Android development (on GitHub)
-\item[Shell Scripting] Extensive personal and professional experience
-\item[PHP] Pure PHP,CodeIgnitor and Zend frameworks, Wordpress and Drupal CMS
-(See portfolio)
-\item[Javascript] Standalone and jQuery. AJAX applications (see Portfolio)
-\item[PostgreSQL] Some coursework
-\item[MapReduce] Some work with Disco Project, a MapReduce framework in
-    Erlang and Python
-\item[Puppet] Wrote modules for deploying and configuring in-house packages
-\item[RabbitMQ] Work with PHP and Python (Pika) drivers
+  \item[Distributed] Heroku is entirely remote, so I'm familiar with
+    geographically distributed teams.
+  \item[Collaborative] I prefer to work closely with other engineers rather than
+    in isolation.
+  \item[Maintenance] Greenfield development is less interesting to me than maintaining
+    and growing existing codebases.
 \end{description}
 \end{document}

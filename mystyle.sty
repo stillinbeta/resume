@@ -1,6 +1,7 @@
 \usepackage[pdfborder={0 0 0},urlcolor=blue]{hyperref}
-\usepackage[margin=1.5cm]{geometry}
+\usepackage[margin=2.5cm]{geometry}
 \usepackage{mdwlist}
+\pagenumbering{gobble}
 
 \thispagestyle{empty}
 \urlstyle{same}
@@ -20,5 +21,6 @@
 \newcommand{\subhead}[1]{\vspace{6pt}{\bf\large#1}}
 \newcommand{\company}[2]{\subhead{#1}\hfill#2\\}
 \newcommand{\postitle}[1]{{\small\bfseries #1}}
-\newcommand{\companydesc}[1]{{\small\it #1}}
+\newcommand{\companydesc}[1]{{\small{\it #1}}}
+\newcommand{\companydescurl}[2]{{\small{\it #1}\hfill\href{https://#2}{#2}}}
 \newcommand{\vbar}{\rule[1mm]{\linewidth}{0.25mm}\\}
