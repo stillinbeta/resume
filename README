@@ -1,0 +1,6 @@
+It's LaTeX not Markdown, so you'll have to build it yourself :)
+
+Install texlive core and texlive latex extra (We need enumitem.sty).
+
+run make, and it should be spit out into resume.pdf
+
