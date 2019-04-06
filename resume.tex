@@ -5,90 +5,77 @@
 \input{./title.tex}
 \vbar
 \head{Experience}
-    \company{Heroku (subsidiary of Salesforce.com)}{2014-present}
-        \companydescurl{A leading Platform-as-a-Service provider}{heroku.com} \\
-        \postitle{Associate Member of Technical Staff, 2014 - 2015} \\
-        \postitle{Member of Technical Staff, 2015 - 2016} \\
-        \postitle{Senior Member of Technical Staff, 2016 - Present} \\
+    \company{Heptio (acquired by VMWare December 2018)}{November 2017-Present}
+        \companydescurl{A Kubernetes sales and support company}{heptio.com} \\
+        \postitle{Software Engineer, November 2017-December 2018} \\
+        \postitle{Member of Technical Staff, December 2018-present} \\
         \begin{employment}
-            \item Quickly familiarised myself with and became productive in
+          \item Greatly improved resiliency and UX of Kubeadm, the official Kubernetes tool
+            for bootstrapping clusters
+          \item Authored comprehensive integration test framework for the
+            AWS Cluster API provider, which allows Kubernetes to manage the hosts it's running on
+          \item Coordinated development on Kubeadm and Cluster API between
+            employees at Heptio, other companies, and hobbyist contributors
+          \item Wrote documentation for new Kubeadm and Sonobuoy features,
+            interfacing with staff technical writers
+          \item Created new engineer-focused CLI for Sonobuoy, the tool used to certify Kubernetes clusters
+                for all organizations participating in the Certified Kubernetes program
+          \item Reviewed, made suggestions to, and approved community contributions to Sonobuoy
+        \end{employment}
+    \company{Heroku (subsidiary of Salesforce.com)}{June 2014 - September 2017}
+        \companydescurl{A leading Platform-as-a-Service provider}{heroku.com} \\
+        \postitle{Associate Member of Technical Staff, June 2014 - February 2015} \\
+        \postitle{Member of Technical Staff, February 2015 - February 2016} \\
+        \postitle{Senior Member of Technical Staff, February 2016 - September 2017} \\
+        \begin{employment}
+            \item Quickly familiarized myself with and became productive in
               dozens of diverse codebases in multiple new-to-me languages (Ruby,
               Coffescript, Go, Erlang)
-            \item Coordinated development with multiple teams to push
-              cross-cutting projects forward
-            \item Lead development on tooling to aid standards compliance,
-                  allowing for new business opportunities
-            \item Participated in 24/7 oncall rotation for high-impact services with
-                  very low response times
-            \item Coordinated responses to complex outages across multiple people
-              and teams
-            \item Predicted problems with architectural decisions before they
-              became real world outages
-            \item Helped launch several major features, including Heroku
-              SSL, Automated Certificate Management, and dyno quotas
-            \item Interacted directly with customers via internal support
-              tickets
+            \item Participated in 24/7 oncall rotation for high-impact like the HTTP router
+              services with sub-5 minute response SLAs.
+            \item Diagnosed and coordinated responses to complex outages of the
+              Heroku Router, scheduling control plane, and container runtime
+              fleet across multiple people and teams
+            \item Developed secure certificate management system to launch with
+              Heroku automated certificate management solution
         \end{employment}
-    \company{Demonware}{2012-2013}
+    \company{Demonware}{July 2012 - September 2013}
     \companydescurl
        {Activision studio providing online infrastructure for multiplayer video
          games}
        {demonware.net} \\
-        \postitle{Software Engineer, Systems Engineering (Co-op)}
-        \begin{employment}
-            \item Helped design, author, deploy, and support internal IaaS
-                  project that drastically reduced datacentre buildout effort
-            \item Maintained and updated metrics capability and infrastructure
-            \item Wrote Puppet modules to deploy applications to thousands of servers
-            \item Credited in several AAA video games, including
-              {\it Diablo III} and multiple {\it Call of Duty} installments
-        \end{employment}
-    \company{Bering Media}{2011}
-    \companydescurl
-    {A small Toronto startup delivering geotargeted online marketing}
-    {beringmedia.com} \\
-    \postitle{Developer (Co-op)}
-        \begin{employment}
-            \item Developed internal web applications using PHP and Zend
-            Framework
-            \item Combined independently developed clustered components,
-            utilizing Riak, Zookeeper and RabbitMQ
-        \end{employment}
+    \postitle{Software Engineer, Systems Engineering (Co-op)}
+    \begin{employment}
+        \item Helped design, author, deploy, and support internal IaaS
+              project that drastically reduced datacentre buildout effort
+        \item Maintained and updated metrics capability and infrastructure
+        \item Credited in several AAA video games, including
+          {\it Diablo III} and multiple {\it Call of Duty} installments
+    \end{employment}
 \vbar{}
 \head{Education}
-    \company{University of Toronto}{2010 -- 2014}
+    \company{University of Toronto}{August 2010 - May 2014}
     \postitle{Honours Bachelor of Science}
     \begin{employment}
         \item Computer Science Specialist
         \item Writing and Rhetoric Minor
     \end{employment}
+
 \newpage
-%\vbar
-\head{Technologies}
-   \companydesc{I pride myself on learning new technologies fast, and making
-     tactical changes in unfamiliar code-bases. These are some examples of
-     technologies I've worked with in the past}
-\begin{description}[topsep=0mm,noitemsep]
-  \item[Python] The primary language of development at Demonware. Still my go-to
-    for small scripts.
-  \item[Ruby] Extensively used at Heroku, mostly Sinatra but some Rails.
-  \item[Linux] Long-term user of desktop Arch Linux, have run CentOS,
-    Gentoo and Ubuntu servers.
-  \item[PostgresQL] The Database of choice at Heroku. Comfortable with raw SQL.
-  %\item[Java] Coursework, some Android development (on GitHub)
-  \item[Javascript] At Heroku I used both both server-side (Hubot)
-    and client-side (internal tools).
-  \item[Shell Scripting] Numerous shell scripts written, some under duress during incidents
-  %\item[Puppet] Wrote modules for deploying and configuring in-house packages at Demonware
-  \item[Haskell] Coursework and personal projects. Nothing professional yet, but I
-    can dream.
-  \item[Erlang] The Heroku Router is written in Erlang, as are various supporting services.
-  %\item[Elixir] Several critical Heroku microservices are written in Elixir.
-  \item[Go] Heroku extensively uses Go microservices with Kafka, gRPC, and Postgres.
-\end{description}
-\vbar
-\head{Projects}
-    \company{PleaseCaption}{2016}
+\head{Personal Projects}
+    \company{pg-extend-rs FDW}
+    \companydesc{Lets you write Postgres extensions in Rust}
+    \begin{employment}
+      \item I contributed the foreign data wrapper component
+      \item \url{https://github.com/bluejekyll/pg-extend-rs}
+    \end{employment}
+    \company{Personal Kubernetes cluster}
+    \companydesc{A cluster for running my website and Mastodon instance}
+    \begin{employment}
+      \item Uses Weaveworks Flux, Heptio Contour, and Bitnami's SealedSecret
+      \item \url{https://github.com/stillinbeta/leckie}
+    \end{employment}
+    \company{PleaseCaption}
     \companydesc{A bot to remind you to add alt text to your images}
     \begin{employment}
       \item Written in Haskell using Conduit
@@ -100,6 +87,43 @@
            \item \url{https://github.com/stillinbeta}
         \end{employment}
 \vbar
+
+\head{Talks}
+      \company{Kubernetes from a Cake Mix}{March 2019}
+      \companydesc{A guided tour through the internals of a Kubernetes cluster using Kubeadm as a cheat sheet}
+      \begin{employment}
+          \item Given at SRECon Americas 2019
+          \item Slides: \url{http://bit.ly/liz-slides3}
+          \item Code: \url{http://bit.ly/liz-code3}
+      \end{employment}
+      \company{Postgres! Plays! Pokemon!}{February 2019}
+      \companydesc{We hook Postgres up to a Gameboy Emulator. What mischief can we do now?}
+      \begin{employment}
+        \item Given at the inaugural BangBangConWest 2019
+        \item Slides: \url{http://bit.ly/liz-talk5}
+        \item Code: \url{http//bit.ly/liz-code5}
+      \end{employment}
+      \company{Kubeadm Deep Dive}
+      \companydesc{The internals of Kubeadm, a tool for bootstrapping clusters}
+      \begin{employment}
+        \item Given at Kubecon North America 2018
+        \item Recording: \url{http://bit.ly/liz-talk6}
+        \item Slides: \url{http://bit.ly/liz-slides6}
+      \end{employment}
+      %% \company{Pager Equity}{August 2016}
+      %% \companydesc{A talk on how a pager rotation could unintentionally be marginalising part of your team}
+      %% \begin{employment}
+      %%     \item Given at Devops Days Boston 2016
+      %%     \item Recording: \url{http://bit.ly/liz-preso1}
+      %%     \item Slides: \url{http://bit.ly/liz-slides1}
+      %% \end{employment}
+      %% \company{Master of None}{August 2016}
+      %% \companydesc{How I deal with being a generalist: learning new things fast,
+      %% and making sure I can remember after I forget.}
+      %% \begin{employment}
+      %%     \item Given at NYC SRE Tech Talks
+      %%     \item Slides: \url{http://bit.ly/liz-slides2}
+      %% \end{employment}
 
 \head{Talks}
       \company{Pager Equity}{}
@@ -118,22 +142,11 @@
       \end{employment}
 \vbar
 \head{Writing}
-     \company{How Tech Employees Can Use Corporate Donation Matching}{2016}
+     \company{How Tech Employees Can Use Corporate Donation Matching}{November 2016}
      \companydesc{A how-to guide for leveraging corporate resources for
        activism}
      \begin{employment}
-       \item Paid piece for Model View Culture
+       
        \item \url{http://bit.ly/liz-article1}
        \end{employment}
-
-\vbar
-\head{Work Style}
-\begin{description}[topsep=0mm,noitemsep]
-  \item[Distributed] Heroku is entirely remote, so I'm familiar with
-    geographically distributed teams.
-  \item[Collaborative] I prefer to work closely with other engineers rather than
-    in isolation.
-  \item[Maintenance] Greenfield development is less interesting to me than maintaining
-    and growing existing codebases.
-\end{description}
 \end{document}
