@@ -5,13 +5,24 @@
 \input{./title.tex}
 \vbar
 \head{Experience}
+    \company{Buzzfeed}{February 2020 to December 2022}
+        \companydescurl{An internet media, news, and entertainment company}{buzzfeed.com} \\
+        \postitle{Staff Software Engineer, February 2020-December 2020} \\
+        \postitle{Principal Software Engineer, December-2020-December 2022} \\
+        \begin{employment}
+          \item Served on Diversity Council, advising on equity in hiring and internal advancement
+          \item Lead reimplementation of internal PaaS onto Kubernetes
+          \item Participated in Oncall and internal support rotation
+          \item Developed new documentation and runbook framework for all internally operated services
+          \item Tech lead and primary maintainer on ingress pipeline with 1000s of requests per second of HTML traffic
+       \end{employment}
     \company{VMware (through Heptio acquisition December 2018)}{November 2017-December 2019}
         \companydescurl{A Kubernetes sales and support company}{vmware.com} \\
         \postitle{Software Engineer, November 2017-December 2018} \\
         \postitle{Member of Technical Staff, December 2018-December 2019} \\
         \begin{employment}
-          \item Greatly improved resiliency and UX of Kubeadm, the official Kubernetes tool
-            for bootstrapping clusters
+          %% \item Greatly improved resiliency and UX of Kubeadm, the official Kubernetes tool
+            %% for bootstrapping clusters
           \item Authored comprehensive integration test framework for the
             AWS Cluster API provider, which allows Kubernetes to manage the hosts it's running on
           \item Coordinated development on Kubeadm and Cluster API between
@@ -52,7 +63,7 @@
         \item Credited in several AAA video games, including
           {\it Diablo III} and multiple {\it Call of Duty} installments
     \end{employment}
-\vbar{}
+%% \vbar{}
 \head{Education}
     \company{University of Toronto}{August 2010 - May 2014}
     \postitle{Honours Bachelor of Science}
@@ -60,34 +71,60 @@
         \item Computer Science Specialist
         \item Writing and Rhetoric Minor
     \end{employment}
-
-\newpage
+\vbar{}
 \head{Personal Projects}
-    \company{pg-extend-rs FDW}
-    \companydesc{Lets you write Postgres extensions in Rust}
+
+  \company{is31fl3741}
+  \companydesc{Rust driver for Driver for Lumissil Microsystem's IS31FL3741 LED drivers}
+  \begin{employment}
+  \item \url{https://github.com/stillinbeta/is31fl3741/}
+  \end{employment}
+    \company{friendshipismonadic}
+    \companydesc{Haskell interpreter for esoteric language Friendship is Monadic}
     \begin{employment}
-      \item I contributed the foreign data wrapper component
-      \item \url{https://github.com/bluejekyll/pg-extend-rs}
+      \item Use parsec and Hedgehog property tester
+      \item \url{https://github.com/stillinbeta/friendshipismonadic}
     \end{employment}
-    \company{Personal Kubernetes cluster}
-    \companydesc{A cluster for running my website and Mastodon instance}
+    \company{zeerust}
+    \companydesc{z80 machine-code emulator written in Rust}
     \begin{employment}
-      \item Uses Weaveworks Flux, Heptio Contour, and Bitnami's SealedSecret
-      \item \url{https://github.com/stillinbeta/leckie}
+      \item Core emulator and web-assembly version in Yew
+      \item \url{https://github.com/stillinbeta/zeerust}
+      \item \url{https://zeerust.stillinbeta.com/}
     \end{employment}
-    \company{PleaseCaption}
-    \companydesc{A bot to remind you to add alt text to your images}
+    \company{yooper}
+    \companydesc{UPNP implementation and scanner written in Rust}
     \begin{employment}
-      \item Written in Haskell using Conduit
-      \item \url{https://twitter.com/pleasecaption}
-      \item \url{https://github.com/stillinbeta/pleasecaption}
+      \item \url{https://git.sr.ht/~liz/yooper}
     \end{employment}
+    %% \company{pg-extend-rs FDW}
+    %% \companydesc{Lets you write Postgres extensions in Rust}
+    %% \begin{employment}
+    %%   \item I contributed the foreign data wrapper component
+    %%   \item \url{https://github.com/bluejekyll/pg-extend-rs}
+    %% \end{employment}
+    %% \company{Personal Kubernetes cluster}
+    %% \companydesc{A cluster for running my website and Mastodon instance}
+    %% \begin{employment}
+    %%   \item Uses Weaveworks Flux, Heptio Contour, and Bitnami's SealedSecret
+    %%   \item \url{https://github.com/stillinbeta/leckie}
+    %% \end{employment}
+    %% \company{PleaseCaption}
+    %% \companydesc{A bot to remind you to add alt text to your images}
+    %% \begin{employment}
+    %%   \item Written in Haskell using Conduit
+    %%   \item \url{https://twitter.com/pleasecaption}
+    %%   \item \url{https://github.com/stillinbeta/pleasecaption}
+    %% \end{employment}
     \company{Github}{}
         \begin{employment}
            \item \url{https://github.com/stillinbeta}
         \end{employment}
+    \company{Sourcehut}{}
+        \begin{employment}
+           \item \url{https://git.sr.ht/~liz/}
+        \end{employment}
 \vbar
-
 \head{Talks}
       {\it More at \url{https://stillinbeta.com/talks}} \\
       \company{Kubernetes from a Cake Mix}{March 2019}
@@ -126,13 +163,15 @@
       %%     \item Slides: \url{http://bit.ly/liz-slides2}
       %% \end{employment}
 
-\vbar
-\head{Writing}
-     \company{How Tech Employees Can Use Corporate Donation Matching}{November 2016}
-     \companydesc{A how-to guide for leveraging corporate resources for
-       activism}
-     \begin{employment}
-       
-       \item \url{http://bit.ly/liz-article1}
-       \end{employment}
+%% \vbar
+%% \head{Writing}
+%%      \company{How Tech Employees Can Use Corporate Donation Matching}{November 2016}
+%%      \companydesc{A how-to guide for leveraging corporate resources for
+%%        activism}
+%%      \begin{employment}
+%%        \item \url{http://bit.ly/liz-article1}
+%%        \end{employment}
+\company{Key Technologies}
+Python, Go, Rust, Linux
+
 \end{document}
