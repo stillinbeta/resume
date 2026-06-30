@@ -1,4 +1,4 @@
-all: resume.pdf
+all: lizfrost-resume.pdf letter.pdf
 
 text: resume.txt
 
@@ -12,7 +12,18 @@ text: resume.txt
 	latex $<
 
 clean:
-	rm *.pdf *.aux *.log *.out *.dvi *.txt
+	rm -f *.pdf *.aux *.log *.out *.dvi *.txt
 
-rename:
-	cp {,$(TAG)-}resume.pdf
+TAG ?= lizfrost
+
+rename: $(TAG)-resume.pdf
+
+$(TAG)-%.pdf: %.pdf
+	cp $< $@
+
+letter-resume.pdf: letter.pdf resume.pdf
+	pdfunite $^ $@
+
+concat: letter-resume.pdf
+
+.PHONY: all clean concat

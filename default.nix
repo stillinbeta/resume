@@ -7,5 +7,7 @@ pkgs.mkShell {
         scheme-small
         enumitem;
     }))
+    pkgs.poppler-utils # for pdfunite
+    pkgs.catdvi
   ];
 }
